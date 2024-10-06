@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death of Star</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .image {
+            width: 400px;
+            height: auto;
+            border: 2px solid #fff;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Death of Star Sub Images</h1>
+    <div class="container">
+        <img src="C:\Users\lenovo\Downloads\jwst.jfif" alt="Supernova 1987A (SN 1987A)" class="image" onclick="showInfo('Supernova 1987 A')">
+        <img src="C:\Users\lenovo\Downloads\RN.jfif" alt="RING NEBULA" class="image" onclick="showInfo('Ring nebula')">
+        <button class="back-btn" onclick="window.history.back()">Go Back</button>
+    </div>
+
+    <script>
+        function showInfo(deathOfStar) {
+            alert(deathOfStar + " information will be displayed here.");
+        }
+    </script>
+</body>
+</html>
